@@ -24,7 +24,7 @@ brainconn(atlas ="Desikan84", conmat=x,
           
 ```
 
-![](https://gitlab.oit.duke.edu/am983/brainconn2/-/raw/main/temp.png)
+![](https://github.com/Ali-Mahzarnia/brainconn2/raw/main/temp.png)
 
 
 
