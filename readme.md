@@ -121,6 +121,9 @@ Desikan84=as.data.frame(Desikan84);Desikan84
 | transversetemporal-Right       | transversetemporal-Right       | 47  | -18 | 10  |
 | insula-Right                   | insula-Right                   | 35  | 4   | -2  |
 
+## Licence
+
+The licence is taken from the original R package (MIT).
 
 ### Citations
 Ali Mahzarnia, Alexander Badea (2022), An extension to the Sparse Canonical Correlation with an application to  Human connectome and AD risk at bioRxiv.
@@ -134,5 +137,6 @@ You can install `fGMD` from [GitHub](https://github.com/Ali-Mahzarnia/fGMD) with
 ```R
 install.packages("https://github.com/Ali-Mahzarnia/brainconn2/archive/master.tar.gz", repos = NULL, type="source")
 ```
+
 
 
