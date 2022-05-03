@@ -1,8 +1,9 @@
-Package: brainconn
+Package: brainconn2
 Title: Plotting Tool for Brain Connectivity Data
-Version: 0.1
-Authors@R: c(person("Sidhant", "Chopra", email = "sid.chopra@monash.edu", role = c("aut", "cre")))
-Description: This package mainly contatins two plotting fucntions: `brianconn()` and `brainconn3d()`, as well as data for several commonly used MNI-space brain atlases
+Version: 0.2
+Author: Ali Mahzarnia
+Maintainer: Ali Mhazarnia <ali.mahzarnia@duke.edu>
+Description: Added features to brainconn() function: The Desikan 84 region is addedd to Atlas library for IIT atalas MRI studies with MNI coordinate, and a compatible glass brain is added that also contains the Cerebellum. This package mainly contatins two plotting fucntions: `brianconn()` and `brainconn3d()`, as well as data for several commonly used MNI-space brain atlases
 Depends: R (>= 3.1.0),
   ggraph
 License: MIT
@@ -23,5 +24,5 @@ Suggests:
     devtools
 VignetteBuilder: knitr
 Encoding: UTF-8
-URL: https://github.com/sidchop/brainconn
-BugReports: https://github.com/sidchop/brainconn/issues
+URL: https://github.com/Ali-Mahzarnia/brainconn2
+BugReports: https://github.com/Ali-Mahzarnia/brainconn2
