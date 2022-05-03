@@ -123,8 +123,10 @@ Desikan84=as.data.frame(Desikan84);Desikan84
 
 
 ### Citations
+Ali Mahzarnia, Alexander Badea (2022), An extension to the Sparse Canonical Correlation with an application to  Human connectome and AD risk at bioRxiv.
 ***
-
+Orchard, E. R., Chopra, S., Ward, P. G., Storey, E., Jamadar, S. D., & Egan, G. F. (2020). *Neuroprotective effects of motherhood on brain function in late-life: a resting state fMRI study.* Cerebral Cortex. \
+https://pubmed.ncbi.nlm.nih.gov/33067999/
 ****
 
 ## Install  
