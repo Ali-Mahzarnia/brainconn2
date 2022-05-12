@@ -135,7 +135,6 @@ https://pubmed.ncbi.nlm.nih.gov/33067999/
 ****
 
 ## Install  
-You can install `fGMD` from [GitHub](https://github.com/Ali-Mahzarnia/fGMD) with the R command:
 ```R
 install.packages("https://github.com/Ali-Mahzarnia/brainconn2/archive/master.tar.gz", repos = NULL, type="source")
 ```
