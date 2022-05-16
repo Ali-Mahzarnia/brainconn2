@@ -28,7 +28,7 @@ brainconn(atlas ="Desikan84", conmat=x,
 
 ## Licence
 
-The licence is taken from the original R package (MIT).
+The licence is taken from the original R package (MIT). For more information on this licence please check ![](https://en.wikipedia.org/wiki/MIT_License)
 
 ### Citations
 Upon using this package please cite both of the following refrences.
