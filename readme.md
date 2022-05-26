@@ -15,7 +15,7 @@ The licence is taken from the original R package (MIT). For more information on 
 ## Example
 Plot 3d brains with celebrelum
 
-Added features: IIT MNI coordinate Desikan84 Atlas with 84 regions, and a glass brain compatible including the cerebellum that didn't exist in the previous version.
+Added features: IIT MNI coordinate Desikan84 Atlas with 84 regions (and Desikan84num with region index based on [this list](https://github.com/Ali-Mahzarnia/atlasindex/blob/main/atlasindex.csv)), and a glass brain compatible including the cerebellum that didn't exist in the previous version.
 
 
 Example:
