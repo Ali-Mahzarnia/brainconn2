@@ -140,7 +140,7 @@ Desikan84=as.data.frame(Desikan84);Desikan84
 ### Citations
 Upon using this package please cite both of the following refrences.
 
-Ali Mahzarnia, Alexandra Badea (2022), Joint Estimation of Vulnerable Brain Networks and Alzheimer’s Disease Risk Via Novel Extension of Sparse Canonical Correlation at bioRxiv. 
+Ali Mahzarnia, Alexandra Badea (2022), Joint Estimation of Vulnerable Brain Networks and Alzheimer’s Disease Risk at bioRxiv. 
 
 Orchard, E. R., Chopra, S., Ward, P. G., Storey, E., Jamadar, S. D., & Egan, G. F. (2020). *Neuroprotective effects of motherhood on brain function in late-life: a resting state fMRI study.* Cerebral Cortex. \
 https://pubmed.ncbi.nlm.nih.gov/33067999/
