@@ -140,7 +140,9 @@ Desikan84=as.data.frame(Desikan84);Desikan84
 ### Citations
 Upon using this package please cite both of the following refrences.
 
-Ali Mahzarnia, Alexandra Badea (2022), Joint Estimation of Vulnerable Brain Networks and Alzheimer’s Disease Risk at bioRxiv. 
+Ali Mahzarnia, Jacques A. Stout, Robert J. Anderson, Hae Sol Moon, Zay Yar Han, Kate Beck, Jeffrey N. Browndyke,
+David B. Dunson, Kim G. Johnson, Richard J. O’Brien, Alexandra Badea, (2022), "Identifying vulnerable brain networks associated with
+Alzheimer’s disease risk" Cerebral Cortex, 2022, 1–16
 
 Orchard, E. R., Chopra, S., Ward, P. G., Storey, E., Jamadar, S. D., & Egan, G. F. (2020). *Neuroprotective effects of motherhood on brain function in late-life: a resting state fMRI study.* Cerebral Cortex. \
 https://pubmed.ncbi.nlm.nih.gov/33067999/
