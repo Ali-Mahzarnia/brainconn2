@@ -21,7 +21,7 @@ Added features: IIT MNI coordinate Desikan84 Atlas with 84 region names (and the
 Example:
 
 ```R
-library(brainconn)
+library(brainconn2)
 x=matrix(0,84,84)
 x[1:3,9:11]= 1:3 ;x[9:11,1:3]= 3:1
 brainconn(atlas ="Desikan84", conmat=x, 
@@ -45,7 +45,7 @@ brainconn(atlas ="Desikan84", conmat=x,
 
 In order to learn more about the Desikan84 Atlas added to the package run the following command:
 ```R
-library(brainconn)
+library(brainconn2)
 Desikan84=as.data.frame(Desikan84);Desikan84
 ```
 
