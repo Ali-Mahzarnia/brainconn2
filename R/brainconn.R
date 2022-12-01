@@ -67,6 +67,8 @@ brainconn <- function(atlas,
     ortho_views  <- c("top", "left", "front")
     for (v in 1:3) {
       view <- ortho_views[v]
+     
+      #bg <- paste0("ICBM152_", view)
       bg <- paste0("ICBM152_", view)
       m <- get(bg)
       #if(any(grepl(background, list.backgroud, fixed=TRUE))) {
@@ -155,6 +157,7 @@ brainconn <- function(atlas,
 
   # If not ortho, then do the below:
 
+  #bg <- paste0("ICBM152_", view)
   bg <- paste0("ICBM152_", view)
   m <- get(bg)
   #if(any(grepl(background, list.backgroud, fixed=TRUE))) {
