@@ -69,7 +69,7 @@ brainconn <- function(atlas,
       view <- ortho_views[v]
      
       #bg <- paste0("ICBM152_", view)
-      bg <- paste0("ICBM152_", view)
+      bg <- paste0(background,"_", view)
       m <- get(bg)
       #if(any(grepl(background, list.backgroud, fixed=TRUE))) {
       #  m <- png::readPNG(paste0("data/background/", background,"_", view,".png"))
@@ -158,7 +158,7 @@ brainconn <- function(atlas,
   # If not ortho, then do the below:
 
   #bg <- paste0("ICBM152_", view)
-  bg <- paste0("ICBM152_", view)
+  bg <- paste0(background,"_", view)
   m <- get(bg)
   #if(any(grepl(background, list.backgroud, fixed=TRUE))) {
   #  m <- png::readPNG(paste0("data/background/", background,"_", view,".png"))
