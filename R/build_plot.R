@@ -246,6 +246,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_dodge = unit(2.5, 'mm'),
                    label_size = 2,
                    fontface = "bold") +
+    scale_edge_colour_gradient(low= "red", high = "blue") +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
@@ -260,7 +261,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     #scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
-    cat("here39")
+    #cat("here39")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
@@ -274,6 +275,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_dodge = unit(2.5, 'mm'),
                    label_size = 2,
                    fontface = "bold") +
+    scale_edge_colour_gradient(low= "red", high = "blue") +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
