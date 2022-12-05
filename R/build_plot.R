@@ -125,6 +125,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                        edge_alpha = edge.alpha,
                        arrow = arrow(length = unit(3, 'mm')),
                        end_cap = circle((node.size/2)+0.6, 'mm'))  +
+                                   
     #  ggraph::geom_edge_loop0(aes(strength=node.size*3), color=edge.color, edge_width = edge.width, arrow = arrow(length = unit(1, 'mm'))) +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
@@ -246,7 +247,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_dodge = unit(2.5, 'mm'),
                    label_size = 2,
                    fontface = "bold") +
-    scale_edge_colour_gradient(low= "red", high = "blue") +
+    scale_edge_colour_gradient(high = "red",low= "blue") +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
@@ -257,7 +258,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     geom_edge_link(aes(color = weight),
                            edge_width = edge.width,
                           edge_alpha = edge.alpha) +
-  scale_edge_colour_gradient(low= "red", high = "blue") +
+  scale_edge_colour_gradient(high= "red", low = "blue") +
     #scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
@@ -275,7 +276,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_dodge = unit(2.5, 'mm'),
                    label_size = 2,
                    fontface = "bold") +
-    scale_edge_colour_gradient(low= "red", high = "blue") +
+    scale_edge_colour_gradient(high= "red", low = "blue") +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
