@@ -60,7 +60,7 @@ brainconn <- function(atlas,
   ifelse(is.character(atlas), data <- get(atlas), data <- atlas)
 
   #set background
-
+  backgroundorig = background
   #loop three times for the three vies that make ortho view
   if (view == "ortho") {
     ortho_list <- list()
@@ -69,7 +69,7 @@ brainconn <- function(atlas,
       view <- ortho_views[v]
      
       #bg <- paste0("ICBM152_", view)
-      bg <- paste0(background,"_", view)
+      bg <- paste0(backgroundorig,"_", view)
       m <- get(bg)
       #if(any(grepl(background, list.backgroud, fixed=TRUE))) {
       #  m <- png::readPNG(paste0("data/background/", background,"_", view,".png"))
