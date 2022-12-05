@@ -22,20 +22,22 @@ Example:
 
 ```R
 library(brainconn2)
-x=matrix(0,84,84)
-x[1:3,9:11]= 1:3 ;x[9:11,1:3]= 3:1
-brainconn(atlas ="Desikan84", conmat=x, 
-          view="ortho", node.size =2, 
-          node.color = "pink", 
-          edge.width = 1, edge.color="blue", 
-          edge.alpha = 0.65,
-          edge.color.weighted = T,
-          scale.edge.width=T,
-          labels = T,
-          all.nodes =F, 
-          show.legend = T, 
-          label.size=3, background.alpha=1, 
-          label.edge.weight=F)
+ x=matrix(0,84,84)
+  x[1:3,9:11]= 1:3
+  x[5:7,15:17]= -(1:3)
+  x=t(x)+x; 
+  brainconn(atlas ="Desikan84", conmat=x, 
+            view="ortho", node.size =2, 
+            node.color = "pink", 
+            edge.width = 1, edge.color="red", 
+            edge.alpha = 0.65,
+            edge.color.weighted = T,
+            scale.edge.width=T,
+            labels = T,
+            all.nodes =F, 
+            show.legend = T, 
+            label.size=3, background.alpha=1, 
+            label.edge.weight=F, background = "ICBM152")  
           
 ```
 
