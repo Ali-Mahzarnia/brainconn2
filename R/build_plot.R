@@ -114,7 +114,8 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
   }
 #make color palate
 rwb=colorRampPalette(colors = c( "blue", "red"))
-  rwbready=rwb(length(unique(conmat)))
+  # rwbready=rwb(length(unique(conmat)))
+  rwbready=rwb(length(unique(5)))
   #make graph
 
   if(directed == T && weighted==F){p <- ggraph(layout) +
