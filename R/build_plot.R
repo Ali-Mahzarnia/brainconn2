@@ -259,7 +259,7 @@ rwb=colorRampPalette(colors = c( "blue", "red"))
     scale_edge_color_distiller( rwbready , limits = c(min(conmat), max(conmat)))+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
-    cat("here31")
+    cat("here32")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
