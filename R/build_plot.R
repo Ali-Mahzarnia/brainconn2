@@ -255,10 +255,10 @@ rwb=colorRampPalette(colors = c("red", "white", "blue"))
     geom_edge_link(aes(color = weight),
                            edge_width = edge.width,
                           edge_alpha = edge.alpha) +
-    scale_edge_colour_distiller(palette = rwbready )+
+    scale_edge_colour_distiller( rwbready )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
-    cat("here22")
+    cat("here23")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
