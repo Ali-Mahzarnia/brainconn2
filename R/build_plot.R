@@ -113,7 +113,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     layout$facet <- include.vec
   }
 #make color palate
-rwb=colorRampPalette(colors = c("red", "blue"))
+rwb=colorRampPalette(colors = c( "blue", "red"))
   rwbready=rwb(length(unique(conmat)))
   #make graph
 
