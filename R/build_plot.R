@@ -113,9 +113,9 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     layout$facet <- include.vec
   }
 #make color palate
-rwb=colorRampPalette(colors = c( "blue", "red"))
+#rwb=colorRampPalette(colors = c( "blue", "red"))
    #rwbready=rwb(length(unique(conmat)))
-  rwbready=rwb(length(unique(5)))
+  #rwbready=rwb(length(unique(5)))
   #make graph
 
   if(directed == T && weighted==F){p <- ggraph(layout) +
@@ -256,11 +256,11 @@ rwb=colorRampPalette(colors = c( "blue", "red"))
     geom_edge_link(aes(color = weight),
                            edge_width = edge.width,
                           edge_alpha = edge.alpha) +
-     scale_colour_gradientn(colors = rwbready)+
+  scale_edge_colour_gradient(low= "red", high = "blue") +
     #scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
-    cat("here38")
+    cat("here39")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
