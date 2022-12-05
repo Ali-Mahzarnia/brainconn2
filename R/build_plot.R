@@ -247,7 +247,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_dodge = unit(2.5, 'mm'),
                    label_size = 2,
                    fontface = "bold") +
-    scale_edge_colour_gradient(high = "red",low= "blue") +
+    scale_edge_colour_gradient2(high = "red",  midpoint = min(conmat)/2+max(conmat)/2, mid = "white"  ,low= "blue") +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
@@ -258,7 +258,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     geom_edge_link(aes(color = weight),
                            edge_width = edge.width,
                           edge_alpha = edge.alpha) +
-  scale_edge_colour_gradient(high= "red", low = "blue") +
+    scale_edge_colour_gradient2(high = "red",  midpoint = min(conmat)/2+max(conmat)/2, mid = "white"  ,low= "blue") +
     #scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
@@ -276,7 +276,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_dodge = unit(2.5, 'mm'),
                    label_size = 2,
                    fontface = "bold") +
-    scale_edge_colour_gradient(high= "red", low = "blue") +
+    scale_edge_colour_gradient2(high = "red",  midpoint = min(conmat)/2+max(conmat)/2, mid = "white"  ,low= "blue") +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
