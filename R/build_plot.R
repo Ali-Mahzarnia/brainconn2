@@ -259,7 +259,7 @@ rwb=colorRampPalette(colors = c( "blue", "red"))
     scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
-    cat("here35")
+    cat("here36")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
