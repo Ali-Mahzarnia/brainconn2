@@ -248,7 +248,8 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
   }
 
 
-  if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==F){p <- ggraph(layout, circular = FALSE) +
+  if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==F){
+    p <- ggraph(layout, circular = FALSE) +
     annotation_custom(background, xmax = xmax ,xmin = xmin , ymax = ymax , ymin = ymin ) +
     geom_edge_link(aes(colour=weight),
                            edge_width = edge.width,
@@ -256,7 +257,8 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
-  if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){p <- ggraph(layout, circular = FALSE) +
+  if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
+    p <- ggraph(layout, circular = FALSE) +
     annotation_custom(background, xmax = xmax ,xmin = xmin , ymax = ymax , ymin = ymin ) +
     geom_edge_link(aes(colour=weight, label=round(weight,3)),
                    edge_width = edge.width,
@@ -337,5 +339,6 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
 
 
 p
+    cat("directed,weighted,edge.color.weighted", directed, weighted,edge.color.weighted )
 
 }
