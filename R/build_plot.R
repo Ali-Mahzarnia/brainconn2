@@ -254,10 +254,9 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
     geom_edge_link(aes(color = weight),
                            edge_width = edge.width,
                            edge_alpha = edge.alpha) +
-     scale_color_viridis()+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
-    print(attributes(layout))
-    cat("here14")
+    #print(attributes(layout))
+    cat("here15")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
