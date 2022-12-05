@@ -114,8 +114,8 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
   }
 #make color palate
 rwb=colorRampPalette(colors = c( "blue", "red"))
-   rwbready=rwb(length(unique(conmat)))
-  #rwbready=rwb(length(unique(5)))
+   #rwbready=rwb(length(unique(conmat)))
+  rwbready=rwb(length(unique(5)))
   #make graph
 
   if(directed == T && weighted==F){p <- ggraph(layout) +
@@ -260,7 +260,7 @@ rwb=colorRampPalette(colors = c( "blue", "red"))
     #scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
-    cat("here37")
+    cat("here38")
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
