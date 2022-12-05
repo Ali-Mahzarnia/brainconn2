@@ -338,6 +338,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
   if (show.legend==T){p <- p + scale_color_discrete(name="Network")}
 
     cat("directed,weighted,edge.color.weighted", directed, weighted,edge.color.weighted )
+  p
 
-
+  
 }
