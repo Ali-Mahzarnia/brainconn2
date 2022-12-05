@@ -251,11 +251,11 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==F){
     p <- ggraph(layout, circular = FALSE) +
     annotation_custom(background, xmax = xmax ,xmin = xmin , ymax = ymax , ymin = ymin ) +
-    geom_edge_link(aes(color = sign(layout)),
+    geom_edge_link(aes(color = sign(conmat)),
                            edge_width = edge.width,
                            edge_alpha = edge.alpha) +
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
-    cat("here7")
+    cat("here8", layout)
   }
 
   if(directed == F && weighted==T && edge.color.weighted==T && label.edge.weight==T){
@@ -338,7 +338,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
   if (show.legend==F){p <- p + theme(legend.position="none")}
   if (show.legend==T){p <- p + scale_color_discrete(name="Network")}
 
-    cat("directed,weighted,edge.color.weighted, label.edge.weight", directed, weighted,edge.color.weighted, label.edge.weight )
+    #cat("directed,weighted,edge.color.weighted, label.edge.weight", directed, weighted,edge.color.weighted, label.edge.weight )
   p
 
   
