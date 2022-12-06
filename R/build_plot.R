@@ -262,7 +262,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                            edge_width = edge.width,
                           edge_alpha = edge.alpha) +
     # scale_edge_colour_gradient2(high = "red",  midpoint = min(conmat)/2+max(conmat)/2, mid = "white"  ,low= "blue") +
-      scale_edge_colour_gradient2(high = "red",  midpoint = 0, mid = "white"  ,low= "blue", limits = c(min(conmat), max(conmat)) ) +  +  
+      scale_edge_colour_gradient2(high = "red",  midpoint = 0, mid = "white"  ,low= "blue", limits = c(min(conmat), max(conmat)) ) +   
     #scale_edge_color_distiller( palette = "Spectral" )+
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
     #print(attributes(layout))
@@ -281,7 +281,7 @@ build_plot <- function(conmat, data, data.row=NULL, data.col=NULL, background, n
                    label_size = 2,
                    fontface = "bold") +
     #scale_edge_colour_gradient2(high = "red",  midpoint = min(conmat)/2+max(conmat)/2, mid = "white"  ,low= "blue") +
-      scale_edge_colour_gradient2(high = "red",  midpoint = 0, mid = "white"  ,low= "blue", limits = c(min(conmat), max(conmat)) ) + +  
+      scale_edge_colour_gradient2(high = "red",  midpoint = 0, mid = "white"  ,low= "blue", limits = c(min(conmat), max(conmat)) ) +  
     coord_fixed(xlim = c(-70,70), ylim = c(-107,73))
   }
 
