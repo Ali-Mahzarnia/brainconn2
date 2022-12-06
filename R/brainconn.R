@@ -55,8 +55,9 @@ brainconn <- function(atlas,
                       label.edge.weight = FALSE,
                       background.alpha = 1) {
 
-
-
+if (view =="back") {view = "front"}
+else if (view =="front") {view = "back"}
+  
   ifelse(is.character(atlas), data <- get(atlas), data <- atlas)
 
   #set background
@@ -64,7 +65,7 @@ brainconn <- function(atlas,
   #loop three times for the three vies that make ortho view
   if (view == "ortho") {
     ortho_list <- list()
-    ortho_views  <- c("top", "left", "front")
+    ortho_views  <- c("top", "left", "back")
     for (v in 1:3) {
       view <- ortho_views[v]
      
