@@ -16,7 +16,7 @@ The licence is taken from the original R package (MIT). For more information on 
 
 Plot mouse 3d brains 
 
-Equivalent of IIT MNI coordinate of "CHASS" atlas (Calabrese et al., 2015; Anderson et al., 2019) with 332 abbreviated region names (and the CHASS_num atlas with only region index instead of region names), and compatible mouse glass brains (background="Chass").
+Added features: Equivalent of IIT MNI coordinate of "CHASS" atlas (Calabrese et al., 2015; Anderson et al., 2019) with 332 abbreviated region names (and the CHASS_num atlas with only region index instead of region names), and compatible mouse glass brains (background="Chass").
 
 ```R
 library(brainconn2)
