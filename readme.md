@@ -82,7 +82,7 @@ Desikan84
 ```
 
 ### Citations
-Upon using this package please cite both of the following refrences.
+Upon using this package please cite the following refrences.
 
 Ali Mahzarnia, Jacques A. Stout, Robert J. Anderson, Hae Sol Moon, Zay Yar Han, Kate Beck, Jeffrey N. Browndyke,
 David B. Dunson, Kim G. Johnson, Richard J. O’Brien, Alexandra Badea, (2022), "Identifying vulnerable brain networks associated with
