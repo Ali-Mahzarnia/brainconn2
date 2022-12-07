@@ -77,8 +77,10 @@ library(brainconn2)
 In order to learn more about the Desikan84, CHASS, or Desikan84num, CHASS_num Atlases added to the package run the following command:
 ```R
 library(brainconn2)
-Desikan84=as.data.frame(Desikan84);
-Desikan84
+as.data.frame(Desikan84);
+as.data.frame(Desikan84num);
+as.data.frame(CHASS);
+as.data.frame(CHASS_num);
 ```
 
 ### Citations
