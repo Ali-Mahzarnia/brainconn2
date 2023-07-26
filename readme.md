@@ -14,32 +14,6 @@ The licence is taken from the original R package (MIT). For more information on 
 
 ## Example
 
-Plot mouse 3d brains 
-
-Added features: Equivalent of IIT MNI coordinate of "CHASS" atlas (Calabrese et al., 2015; Anderson et al., 2019) with 332 abbreviated region names (and the CHASS_num atlas with only region index instead of region names), and compatible mouse glass brains (background="Chass").
-
-```R
-library(brainconn2)
-x=matrix(0,332,332)
-x[1:3,9:11]= 1:3
-x[5:7,15:17]= -(2:4)
-x=t(x)+x; 
-brainconn(atlas ="CHASS", conmat=x, 
-          view="ortho", node.size =0.5, 
-          node.color = "black", 
-          edge.width = 1, edge.color="red", 
-          edge.alpha = 0.65,
-          edge.color.weighted = T,
-          scale.edge.width=T,
-          labels = T,
-          all.nodes =T, 
-          show.legend = T, 
-          label.size=3, background.alpha=1, 
-          label.edge.weight=F, background = "Chass")  
-          
-```
-
-![](https://github.com/Ali-Mahzarnia/brainconn2/raw/main/temp2.png)
 
 
 
@@ -83,6 +57,34 @@ as.data.frame(Desikan84num);
 as.data.frame(CHASS);
 as.data.frame(CHASS_num);
 ```
+
+Plot mouse 3d brains 
+
+Added features: Equivalent of IIT MNI coordinate of "CHASS" atlas (Calabrese et al., 2015; Anderson et al., 2019) with 332 abbreviated region names (and the CHASS_num atlas with only region index instead of region names), and compatible mouse glass brains (background="Chass").
+
+```R
+library(brainconn2)
+x=matrix(0,332,332)
+x[1:3,9:11]= 1:3
+x[5:7,15:17]= -(2:4)
+x=t(x)+x; 
+brainconn(atlas ="CHASS", conmat=x, 
+          view="ortho", node.size =0.5, 
+          node.color = "black", 
+          edge.width = 1, edge.color="red", 
+          edge.alpha = 0.65,
+          edge.color.weighted = T,
+          scale.edge.width=T,
+          labels = T,
+          all.nodes =T, 
+          show.legend = T, 
+          label.size=3, background.alpha=1, 
+          label.edge.weight=F, background = "Chass")  
+          
+```
+
+![](https://github.com/Ali-Mahzarnia/brainconn2/raw/main/temp2.png)
+
 
 ### Citations
 Upon using this package please cite the following refrences.
